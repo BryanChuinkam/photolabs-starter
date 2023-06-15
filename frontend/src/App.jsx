@@ -1,13 +1,19 @@
 import React from 'react';
+// import PhotoList from './components/PhotoList';
+import TopicList from './components/TopicList';
+import TopNavigation from './components/TopNavigationBar';
 
-import PhotoListItem from './components/PhotoListItem';
 import './App.scss';
 
 // Note: Rendering a single component to build components in isolation
-const App = () => (
-  <div className="App">
-    <PhotoListItem/>
-  </div>
-)
+const App = () => {
 
-export default App
+  return (
+
+    <div className="App">
+      <TopNavigation />
+    </div>
+  );
+};
+
+export default App;
