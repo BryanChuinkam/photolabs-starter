@@ -8,9 +8,12 @@ import PhotoFavButton from '../components/PhotoFavButton';
 const PhotoDetailsModal = (props) => {
   const { closeModal, modalData, likedIds, likeSetter, openModal } = props;
 
+  console.log("ModalData", modalData);
+  console.log("ModalData type", typeof modalData.similarPhotos);
 
-  const smimilarPhotosArray = Object.values(modalData.similarPhotos);
-  const mappedSimilarPhotos = smimilarPhotosArray.map((photo) => {
+
+
+  const mappedSimilarPhotos = modalData.similar_photos.map((photo) => {
     return (<PhotoListItem key={photo.id} photo={photo} likedIds={likedIds} likeSetter={likeSetter} openModal={openModal} />);
   });
 
