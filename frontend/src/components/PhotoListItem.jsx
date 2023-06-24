@@ -16,10 +16,10 @@ const PhotoListItem = (props) => {
       }}></img>
       <hr></hr>
       <div className='list__user' >
-        <img src={photo.profile} className='photo-list__user-profile'></img>
-        <span className='photo-list__user-info'>{photo.username}</span>
+        <img src={photo.user.profile} className='photo-list__user-profile'></img>
+        <span className='photo-list__user-info'>{photo.user.name}</span>
         <div className='.photo-list__user-location'>
-          <span>{photo.location.city}, </span>
+          <span>{photo.location.city} </span>
           <span>{photo.location.country}</span>
         </div>
       </div>
